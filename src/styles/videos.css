@@ -1,0 +1,24 @@
+.video img{
+    width:360px;
+    height:202px;
+    border-radius:10px;
+
+}
+.videoDetails{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+  
+}
+.video{
+    width:25%;
+    margin:0px;
+}
+.video h3{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.video p{
+    margin:0px;
+}
