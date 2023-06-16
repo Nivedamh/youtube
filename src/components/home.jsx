@@ -1,12 +1,13 @@
-import Categories from "./categories";
+import Categories from "./categories"
+import Banner from "./banner";
 import Videos from "./videos";
-const home = () => {
-    return ( 
+
+const Home=()=>{
+    return(
         <div className="home">
 <Categories/>
 <Videos/>
-</div>
-    );
+        </div>
+    )
 }
- 
-export default home;
+export default Home;

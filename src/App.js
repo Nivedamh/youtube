@@ -14,15 +14,42 @@
 
 
 //hooks
-import'./App.css';
-import Videos from './components/videos';
+// import'./App.css';
+// import Videos from './components/videos';
 
-function App(){
-       return (
-            <div className="App">
- <Videos/>
-  
-</div>
-   );
-   }
-    export default App; 
+
+// function App(){
+//        return (
+//             <div className="App">
+//  <Videos/>
+
+// </div>
+//    );
+//    }
+//     export default App; 
+
+
+import './App.css';
+import Navbar from './components/navbar'
+import Home from './components/home';
+import AddVideo from './components/addvideo';
+import PageNotFound from './components/pageNotFound';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route element={<Home />} path='/' />
+          <Route element={<AddVideo />} path='/add-video' />
+          <Route element={<PageNotFound />} path='*' /> 
+        </Routes>
+
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;

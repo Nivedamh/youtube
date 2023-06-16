@@ -1,33 +1,35 @@
 .navbar{
     display:flex;
     align-items: center;
-    justify-content:space-between ;
-    padding: 0px,35px;
+    justify-content: space-between;
+    padding: 0px,20px;
+}
+
+.searchBar input{
+    height: 40px;
+    width: 450px;
+    border-radius: 50px;
+    border: 1px solid rgb(220, 220, 220);    
+    font-size: 18px;
+    padding-left: 20px;
   
 }
-.SearchBar input{
-width: 700px;
-height:40px;
-border-radius: 100px;
-border: 1px solid rgb(80, 255, 130);
-font-size: 18px;
-padding-left: 20px;
-}
-.SearchBar input.focus{
+.searchBar input:focus{
     outline: none;
-border: 1px,solid,light
+    border: 2px solid rgb(4, 31, 84);
+    
 }
-.UserOption{
+.userOption{
     width:200px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
-.UserOption h4{
-    background-color:rgb(235, 96, 96);
-    color: rgb(3, 11, 15);
-    font-size: 20px;
-    padding: 10px,18px;
+.userOption h4{
+    background-color: rgb(255, 127, 168);
+    color: rgb(51, 0, 139);
+    padding:12px ;
+    font-size:10px 18px;
     border-radius: 100%;
 }
